@@ -10,6 +10,9 @@ function ContactUs() {
 Hello,I am <input placeholder='Your name' /> from <input placeholder='Institution name' />.You can email me at <input placeholder='Mail id' /> or reach me on <input placeholder='Mobile Number' />.
 <br/><div className='txt-content'>I have some questions about <textarea className='text-area' />.</div>
                 </div>
+                <div className='submit'>
+                    <div>SUBMIT</div>
+                </div>
             </div>
             <div className='faq-container'>
                 <div className='faq-header'>
