@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom'
 function WebDevs() {
     const webdevsref=useRef(null)
     const navigate=useNavigate()
-    const scrollhandler=()=>{
-        if (webdevsref.current.offsetHeight+webdevsref.current.scrollTop>webdevsref.current.scrollHeight){
-            navigate("/commitee")
-        }
-    }
+    // const scrollhandler=()=>{
+    //     if (webdevsref.current.offsetHeight+webdevsref.current.scrollTop>webdevsref.current.scrollHeight){
+    //         navigate("/commitee")
+    //     }
+    // }
     return (
-        <div className='webdevs' ref={webdevsref} onScroll={scrollhandler}>
+        <div className='webdevs' ref={webdevsref} >
             <div className='webdevs-container'>
                 <div >
                     <h1 className='webdevs-title'>Web Developers</h1>

@@ -27,3 +27,7 @@ body,html{
   background: var(--fg-green);
   border-radius: 20px;
 }
+::selection {
+  color: var(--fg-white);
+  background: var(--fg-green);
+}

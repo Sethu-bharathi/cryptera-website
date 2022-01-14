@@ -25,14 +25,14 @@
     margin-top: 120px;
 }
 .web-card{
-    background-color:rgb(51, 50, 50,0.3);
+    background-color:rgba(26, 25, 25, 0.3);
     width:300px;
     height:250px;
     border-radius: 5px;
     position: relative;
     padding: 20px;
     margin-bottom: 90px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
 }
 .web-card-image{
     width:80px;
