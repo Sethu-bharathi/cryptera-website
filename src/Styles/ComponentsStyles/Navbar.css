@@ -1,7 +1,7 @@
 .navbar{
     width: 300px;
     height:100vh;
-    padding:50px 0px 50px 90px ;
+    padding:50px 0px 50px 60px ;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,14 @@
     -webkit-text-stroke-width: 0.7px;
     -webkit-text-stroke-color: var(--fg-white);
     color: transparent;
+    cursor: pointer;
 }
 .active{
+    color: var(--fg-green);
+}
+.navbar-link>span{
+    margin-left: 5px;
+}
+.navbar-link:hover{
     color: var(--fg-green);
 }
