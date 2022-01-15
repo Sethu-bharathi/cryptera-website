@@ -12,6 +12,7 @@ import ContactUs from './Components/Screens/ContactUs';
 import WebDevs from './Components/Screens/WebDevs';
 import Commitee from './Components/Screens/Commitee';
 import Events from './Components/Screens/Events';
+import Timeline from './Components/Screens/Timeline';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/about_us" element={<AboutUs />}></Route>
             <Route path="/events" element={<Events />}></Route>
+            <Route path="/timeline" element={<Timeline />}></Route>
             <Route path="/web_devs" element={<WebDevs />}></Route>
             <Route path="/commitee" element={<Commitee />}></Route>
             <Route path="/contact_us" element={<ContactUs />}></Route>

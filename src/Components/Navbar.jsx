@@ -6,6 +6,7 @@ function Navbar() {
     const location = useLocation()
     const navigate = useNavigate()
     const homeref = useRef(null)
+    const timelineref = useRef(null)
     const aboutref = useRef(null)
     const contactref = useRef(null)
     const eventref = useRef(null)
@@ -19,6 +20,7 @@ function Navbar() {
         eventref.current.classList.remove('active')
         webref.current.classList.remove('active')
         commiteeref.current.classList.remove('active')
+        timelineref.current.classList.remove('active')
     }
     useEffect(() => {
         if (location.pathname === "/") {
@@ -49,9 +51,9 @@ function Navbar() {
         else if (location.pathname === "/events") {
             clearActive()
             eventref.current.classList.add("active")
-            hintref.current.innerHTML = "Web devs"
+            hintref.current.innerHTML = "Time line"
             hintref.current.addEventListener("click", () => {
-                navigate("/web_devs")
+                navigate("/timeline")
             })
         }
         else if (location.pathname === "/web_devs") {
@@ -62,6 +64,14 @@ function Navbar() {
                 navigate("/commitee")
             })
 
+        }
+        else if(location.pathname === "/timeline"){
+            clearActive()
+            timelineref.current.classList.add("active")
+            hintref.current.innerHTML = "Web devs"
+            hintref.current.addEventListener("click", () => {
+                navigate("/web_devs")
+            })
         }
         else if (location.pathname === "/commitee") {
             clearActive()
@@ -86,6 +96,7 @@ function Navbar() {
                 <Link to="/" ref={homeref} className="active navbar-link" id="Home-link">       <i className="fa fa-home"></i><span>Home</span></Link>
                 <Link to="about_us" ref={aboutref} id="about_us" className="navbar-link" id="about_us-link"><i className="fa fa-info-circle"></i><span>About us</span></Link>
                 <Link to="events" ref={eventref} className=" navbar-link"> <i className="fa fa-calendar-minus"></i><span>Events</span></Link>
+                <Link to="timeline" ref={timelineref} className=" navbar-link"> <i className="fa fa-user-clock"></i><span>Timeline</span></Link>
                 <Link to="web_devs" ref={webref} className="navbar-link"><i className="fa fa-wifi"></i><span>Web devs</span></Link>
                 <Link to="commitee" ref={commiteeref} className=" navbar-link"><i className="fa fa-users"></i><span>Commitee</span></Link>
                 <Link to="contact_us" ref={contactref} className=" navbar-link"><i className="fa fa-headset"></i><span>Contact Us</span></Link>
