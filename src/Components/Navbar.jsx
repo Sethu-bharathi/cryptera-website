@@ -32,6 +32,22 @@ function Navbar() {
             })
 
         }
+        else if (location.pathname.includes("/events")) {
+            clearActive()
+            eventref.current.classList.add("active")
+            if(location.pathname=== "/events"){
+                hintref.current.innerHTML = "Timeline"
+                hintref.current.addEventListener("click", () => {
+                    navigate("/timeline")
+                })
+            }
+            else{
+                hintref.current.innerHTML = "Back"
+                hintref.current.addEventListener("click", () => {
+                    navigate("/events")
+                })
+            }
+        }
         else if (location.pathname === "/about_us") {
             clearActive()
             aboutref.current.classList.add("active")

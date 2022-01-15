@@ -13,6 +13,7 @@ import WebDevs from './Components/Screens/WebDevs';
 import Commitee from './Components/Screens/Commitee';
 import Events from './Components/Screens/Events';
 import Timeline from './Components/Screens/Timeline';
+import Eventdetails from './Components/Screens/Eventdetails';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/web_devs" element={<WebDevs />}></Route>
             <Route path="/commitee" element={<Commitee />}></Route>
             <Route path="/contact_us" element={<ContactUs />}></Route>
+            <Route path="/events/:name" element={<Eventdetails />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

@@ -47,7 +47,7 @@ function Events() {
                 <h1 ref={flagshipref} onClick={flagshipclick}>Flagship</h1>
             </div>
             <div className='events-body' onWheel={scrollhandler} ref={bodyref}>
-                <Eventcard primary="#24B47E" />
+                <Eventcard primary="#24B47E"  />
                 <Eventcard primary="red" />
                 <Eventcard primary="orange" />
                 <Eventcard primary="#24B47E" />
