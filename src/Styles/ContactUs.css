@@ -113,3 +113,8 @@
 .submit>div:hover{
    color: var(--fg-green);
 }
+.mobile-container{    
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}

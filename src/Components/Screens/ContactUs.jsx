@@ -4,6 +4,9 @@ import Faq from '../Faq'
 function ContactUs() {
     return (
         <div className='support'>
+            <div className='mobile-container'>
+                <i className='fa fa-phone'></i>
+            </div>
             <div className='support-container'>
                 <h1 className='support-header'>Support</h1>
                 <div className='support-content'>
