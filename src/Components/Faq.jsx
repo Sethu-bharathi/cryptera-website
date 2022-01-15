@@ -2,14 +2,20 @@ import React, { useRef, useState } from 'react'
 
 function Faq() {
     const iconref=useRef(null)
+    const questionref=useRef(null)
     const [open, setopen] = useState(false)
     const toggleanswer = (e) => {
         setopen(!open)
         iconref.current.classList.toggle('rotate')
+        if(!open){
+            questionref.current.style.color="var(--fg-green)"
+        }else{
+            questionref.current.style.color="var(--fg-white)"
+        }
     }
     return (
         <div className="faq-card" >
-            <div className="faq-question" onClick={toggleanswer}>
+            <div className="faq-question" onClick={toggleanswer} ref={questionref}>
                 <div>
                     What is the difference between a free trial and a paid subscription?
                 </div>
