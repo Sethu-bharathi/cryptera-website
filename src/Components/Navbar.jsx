@@ -105,7 +105,7 @@ function Navbar() {
     return (
         <div className='navbar'>
             <div className='navbar-logo'>
-                MD
+                <img src={require('../Assets/logo.png')} alt="logo" />
             </div>
             <div className='navbar-links'>
 

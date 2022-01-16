@@ -26,6 +26,7 @@ body,html{
 ::-webkit-scrollbar-thumb{
   background: var(--fg-green);
   border-radius: 20px;
+  display: none;
 }
 ::selection {
   color: var(--fg-white);

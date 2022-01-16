@@ -7,6 +7,7 @@ function Home() {
     const scrollHandler=()=>{
         //if scroll hits bottom
         if (Homeref.current.offsetHeight+Homeref.current.scrollTop>=Homeref.current.scrollHeight){
+
             navigator('/about_us')
         }
     }
@@ -14,6 +15,9 @@ function Home() {
         <div className='home main-section' id="Home" ref={Homeref}    onScroll={scrollHandler}>
             <div className='py-56'>hello </div>
             <div className='py-56'>hello </div>
+            <div className='add-green'>
+                    
+            </div>
             
         </div>
     )
