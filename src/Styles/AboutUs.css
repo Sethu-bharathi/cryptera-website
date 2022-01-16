@@ -58,14 +58,15 @@
   max-width: 350px;
   max-height: 350px;
 }
-.container2 {
+.container2,.container3,.container4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; 
   align-content: center;
-  height:90%;
+  
   row-gap:20px;
+  margin: 20px 0;
 }
 
 
@@ -110,6 +111,26 @@
   font-size: 30px;
   margin-bottom: 10px;
 }
+.container3,.container4{
+  min-height:60%;
+}
+.cit-logo{
+  height:250px;
+}
+.container4 p,.container3 p{
+  padding: 0 20px ;
+  font-size: 17px;
+}
+.container5{
+  margin:20px;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:30px 40px;
+}
+
 @media screen and (max-width: 789px) {
   
   .about-us-container {
@@ -148,5 +169,18 @@
   }
   .heading2{
     align-self: center;
+  }
+  .container3{
+    min-height: auto;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .cit-logo{
+    height : 90%;
+  }
+  .container4{
+    min-height: auto;
+    flex-direction: column-reverse;
+    padding: 0 10px;
   }
 }

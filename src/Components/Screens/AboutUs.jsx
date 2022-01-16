@@ -2,6 +2,8 @@ import React from "react";
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 import "../../Styles/AboutUs.css";
 import what_we_do from "../../Assets/Asset 6.png";
+import image1 from "../../Assets/1905098.png";
+import Staffcard from "../../Components/StaffCard";
 
 function AboutUs() {
   return (
@@ -41,15 +43,33 @@ function AboutUs() {
         </div>
           </div>
       </div>
-      <h2 className="heading3">ABOUT CIT</h2>
-      <div className="container2">
+      
+      <div className="container3">
         <p>
+        <span className="heading3">About CIT</span><br></br>
         Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
         Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
         Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
         Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum dona
         </p>
-        <img src={what_we_do} alt="CIT" srcset="" className="cit-logo"/>
+        <img src={what_we_do} alt="CIT"  className="cit-logo"/>
+      </div>
+      <div className="container4">
+      <img src={what_we_do} alt="CIT"  className="cit-logo"/>
+        <p>
+        <span className="heading3">About CSE Department</span><br></br>
+        Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
+        Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
+        Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
+        Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum dona
+        </p>
+        
+      </div>
+      <div className="container5">
+        <Staffcard image={image1} Name={"Faculty1"} position={"Professor"}/>
+        <Staffcard image={image1} Name={"Faculty1"} position={"Professor"}/>
+        <Staffcard image={image1} Name={"Faculty1"} position={"Professor"}/>
+        <Staffcard image={image1} Name={"Faculty1"} position={"Professor"}/>
       </div>
     </div>
   );

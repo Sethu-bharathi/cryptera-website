@@ -1,0 +1,33 @@
+.faculty{
+    height:320px;
+    width:240px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    background-color: var(--bg-black1);
+    box-shadow: -1px -1px 1px 1px rgba(255,255,255,.5);
+    padding:10px 0;
+}
+
+.faculty-image{
+    position: relative;
+    top:-30%;
+    height:130px;
+}
+.triangle{
+    position: relative;
+    height:90px;
+    width:500px;
+    transform: rotate(-26deg)translate( -30px,-10px);
+    background-color: #24B47E;
+}
+.faculty h3{
+    margin:6px;
+    position: relative;
+    bottom:15px;
+    font-size: 18px;
+    color:#ccd6f6
+}
