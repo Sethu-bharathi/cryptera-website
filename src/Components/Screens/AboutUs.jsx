@@ -47,7 +47,7 @@ function AboutUs() {
         Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
         Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
         Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
-        Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum donar
+        Lorem ipsum donar lorem ipsum donar ihjr lorem ipsum Lorem ipsum donar lorem ipsum dona
         </p>
         <img src={what_we_do} alt="CIT" srcset="" className="cit-logo"/>
       </div>
